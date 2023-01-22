@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const startButton = document.querySelector('.beer-button')
     const beerButton = document.querySelector('.random-beer')
     const tagLine = document.querySelector('.tag-line')
+    const descriptionDisplay = document.querySelector('.description')
     function getRandomBeer(beers) {
         const randomId = Math.floor(Math.random() * 25) + 1
         let randomBeer
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const randomBeer = getRandomBeer(data)
             beerButton.innerHTML = randomBeer.name
             tagLine.innerHTML = randomBeer.tagline 
+            descriptionDisplay.innerHTML = randomBeer.description
             console.log(randomBeer)
            
            
