@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json()
         })
             .then(data => {
-           
+            const randomBeer = getRandomBeer(data)
+            beerButton.innerHTML = randomBeer.name
+            console.log(randomBeer)
            
            
         })
