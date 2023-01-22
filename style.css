@@ -4,3 +4,13 @@ body {
     background-color: lavender;
 }
 
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -ms-ime-align: inherit;
+    align-items: center;
+    text-align: center;
+    background-color: lavender;
+}
