@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-
+    const startButton = document.querySelector('.beer-button')
+    const beerButton = document.querySelector('.random-beer')
     function getRandomBeer(beers) {
         const randomId = Math.floor(Math.random() * 25) + 1
         let randomBeer
