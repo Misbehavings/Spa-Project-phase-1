@@ -21,3 +21,10 @@ body {
     font-size: 40px;
     font-family: helvetica;
 }
+
+.description {
+    max-width: 600px;
+    color: black;
+    font-family: helvetica;
+    font-size: 20px;
+}
