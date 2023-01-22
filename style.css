@@ -14,3 +14,10 @@ body {
     text-align: center;
     background-color: lavender;
 }
+
+.random-beer {
+    margin-top: 150px;
+    color: black;
+    font-size: 40px;
+    font-family: helvetica;
+}
