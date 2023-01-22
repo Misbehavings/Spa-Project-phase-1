@@ -31,7 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
     }
-
+    
+    
+startButton.addEventListener('click', getData)
 
 
 })
