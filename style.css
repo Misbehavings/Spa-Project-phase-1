@@ -28,3 +28,7 @@ body {
     font-family: helvetica;
     font-size: 20px;
 }
+
+.beer-button {
+    display: inline-flex;
+}
