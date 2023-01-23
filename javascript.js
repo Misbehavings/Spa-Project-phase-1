@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const startButton = document.querySelector('.beer-button')
-    const beerButton = document.querySelector('.random-beer')
+    const rButton = document.querySelector('.random-beer')
     const tagLine = document.querySelector('.tag-line')
     const descriptionDisplay = document.querySelector('.description')
+    const date = document.querySelector('.date')
+    const button = document.querySelector('.button');
+    const beerButton = document.querySelector('.beer-button');
+    
+    
     function getRandomBeer(beers) {
         const randomId = Math.floor(Math.random() * 25) + 1
         let randomBeer
@@ -22,15 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
         })
             .then(data => {
             const randomBeer = getRandomBeer(data)
-            beerButton.innerHTML = randomBeer.name
+            rButton.innerHTML = randomBeer.name
             tagLine.innerHTML = randomBeer.tagline 
             descriptionDisplay.innerHTML = randomBeer.description
-            console.log(randomBeer)
-           
-           
+            date.innerHTML = "First brewed in" + " " + randomBeer.first_brewed
         })
 
     }
+
+   
     
     
 startButton.addEventListener('click', getData)
