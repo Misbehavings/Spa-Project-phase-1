@@ -1,1 +1,1 @@
-# Beer Recipe
+# Random Beer Generator
