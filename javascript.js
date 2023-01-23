@@ -35,7 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-   
+    beerButton.addEventListener('mouseover', function() {
+        button.style.backgroundColor = "transparent";
+        button.innerHTML = "Click Me";
+    });
+    
+    beerButton.addEventListener('mouseout', function() {
+        button.style.backgroundColor = "white";
+        button.innerHTML = "";
+    });
     
     
 startButton.addEventListener('click', getData)
