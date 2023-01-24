@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     beerButton.addEventListener('mouseover', function() {
         button.style.backgroundColor = "transparent";
-        button.innerHTML = "Click Me";
+        button.innerHTML = "";
     });
     
     beerButton.addEventListener('mouseout', function() {
         button.style.backgroundColor = "white";
-        button.innerHTML = "";
+        button.innerHTML = "Click Me";
     });
     
     
