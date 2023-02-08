@@ -9,16 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     function getRandomBeer(beers) {
-        const randomId = Math.floor(Math.random() * 25) + 1
-        let randomBeer
-        beers.forEach(beer => {
-            if (beer.id === randomId) {
-                randomBeer = beer;
-                return;
-            }
-        })
-        return randomBeer
-    }
+        const randomId = Math.floor(Math.random() * 25) + 1;
+        return beers.find(beer => beer.id === randomId);
+      }
     
     function getData() {
         fetch('https://api.punkapi.com/v2/beers')
@@ -27,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
         })
             .then(data => {
             const randomBeer = getRandomBeer(data)
-            rButton.innerHTML = randomBeer.name
-            tagLine.innerHTML = randomBeer.tagline 
+            rButton.innerHTML = "Beer Name - " + " " + randomBeer.name
+            tagLine.innerHTML = "Tagline - " + " " + randomBeer.tagline 
             descriptionDisplay.innerHTML = randomBeer.description
             date.innerHTML = "First brewed in" + " " + randomBeer.first_brewed
         })
